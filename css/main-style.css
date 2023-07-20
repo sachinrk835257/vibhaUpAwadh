@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.outer-container {
+    max-width: 1200px;
+}
+
+/* jumbotron styling */
+.jumbotron {
+    background-color: #212529;
+    color: white;
+    font-size: 12px;
+    padding: 1rem 0rem 1rem 0rem;
+
+}
+
+.jumbotron .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.login-area {
+    background-color: #3496bf;
+    position: absolute;
+    padding: 10px 20px 10px 188px;
+    top: 5.1%;
+    right: 11.95%;
+}
+
+.login-area .seperator::before {
+    content: " | ";
+    padding: 0px 10px;
+}
+
+.login-area a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-user {
+    margin-right: 4px;
+}
+
+.fa-lock {
+    margin-right: 4px;
+}
+
+
+
+/* .jumbo-link-area::before{
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+} */
+
+/* navbar styling */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+.navbar {
+    padding: 0;
+}
+.navbar .logo{
+    border-radius: 50%;
+    width: 72px;
+}
+
+.carousal-area {
+    background-color: green;
+}
+
+.main-content {
+    background-color: pink;
+}
+
+.main-content .about-vibha {
+    background-color: rgb(190, 238, 118)
+}
+
+.main-content .aim {
+    background-color: rgb(200, 85, 85);
+}
+
+.social-area {
+    background-color: purple;
+}
+
+.footer-content {
+    background-color: grey;
+}
