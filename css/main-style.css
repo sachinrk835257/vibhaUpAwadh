@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,11 +10,19 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color:aliceblue;
 }
 
 .outer-container {
-    max-width: 1200px;
+    max-width: 1252px;
+    background-color: white;
+}
+.outer-container header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 5px 6px grey;
+    margin-bottom: 1rem;
 }
 
 /* jumbotron styling */
@@ -17,7 +30,8 @@ body {
     background-color: #212529;
     color: white;
     font-size: 12px;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    margin-bottom: 0rem;
 
 }
 
@@ -25,15 +39,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1224px;
+    padding: 0;
 }
 
 
 .login-area {
-    background-color: #3496bf;
-    position: absolute;
+     background-color: darkcyan;
     padding: 10px 20px 10px 188px;
-    top: 5.1%;
-    right: 11.95%;
 }
 
 .login-area .seperator::before {
@@ -44,6 +57,14 @@ body {
 .login-area a {
     text-decoration: none;
     color: white;
+}
+.login-area a:hover{
+    color: red;
+    text-shadow: 2px 2px 2px black;
+}
+.modal-body .input-group{
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .fa-user {
@@ -65,39 +86,440 @@ body {
 
 /* navbar styling */
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: red;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
 }
+
 .navbar {
     padding: 0;
+    width: 100%;
 }
-.navbar .logo{
+
+.navbar .logo {
     border-radius: 50%;
     width: 72px;
 }
 
-.carousal-area {
-    background-color: green;
+.navbar .navbar-brand {
+    margin-right: 115px;
 }
 
-.main-content {
-    background-color: pink;
+.navbar-light .navbar-nav .nav-link {
+    color: black;
 }
 
-.main-content .about-vibha {
-    background-color: rgb(190, 238, 118)
+/* .navbar-light .navbar-nav .nav-link::before {
+    content: "";
+    position: relative;
+    bottom: 10px;
+    left: 1%;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    
+} */
+.navbar-light .navbar-nav .nav-link:hover:before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    bottom: 0px;
+    animation: increseTheSize 0.6s ease-in-out infinite;
 }
 
-.main-content .aim {
-    background-color: rgb(200, 85, 85);
+@keyframes increseTheSize {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
 }
 
-.social-area {
-    background-color: purple;
+.navbar .navbar-brand span {
+    color: #0062cc;
+    font-family: 'Lugrasimo', cursive;
+    /* font-family: 'Mukta', sans-serif; */
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-left: 4px;
 }
 
-.footer-content {
-    background-color: grey;
+/* carousal css */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    background-color: blue;
+    border-radius: 50%;
+    width: 4%;
+    height: 9%;
+    bottom: auto;
 }
+
+.carousel-control-prev {
+    left: 5px;
+
+}
+
+.carousel-control-next {
+    right: 5px;
+
+}
+
+.main-content .about-vibha, .main-content .aim {
+    background-color: rgb(7 46 74);
+    color: white;
+    padding: 30px;
+    position: relative;
+    margin-top: 2rem;
+}
+.main-content .header{
+    background-color: darkcyan;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+}
+.supportive-box{
+    position: absolute;
+    top: -15px;
+    left: 31%;
+    width: 223px;
+    height: 73.5px;
+    background-color: darkcyan;
+    transform: skewX(59deg);
+}
+
+.main-content-header{
+     background-color: darkcyan;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    width: 37%;
+    padding: 17px 10px 18px 27px;
+    position: absolute;
+    /* width: 48%; */
+    top: -15px;
+    left: 0;
+
+}
+.main-content .content{
+    margin-top: 52px;
+    text-align: justify;
+    line-height: 26px;
+    margin-right: 47px;
+    font-size: 1rem;
+    margin-right: 61px;
+}
+
+.main-content button{
+     background-color: darkcyan;
+    color: white;
+    padding: 10px 49px;
+    border: none;
+    border-radius: 2px;
+}
+.main-content button:hover{
+    color: darkcyan;
+    background-color: #fff;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+}
+
+.social-area, .features {
+    /* background-color: purple; */
+    margin: 2rem 0.5rem;
+}
+.scroll-container {
+    height: 400px;
+    width: 100%;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.social-area .social-accounts .card:not(.card:last-child){
+    margin-right: 35px;
+    /* border: 4px solid black; */
+}
+
+.social-area .social-accounts .card:hover{
+    box-shadow: 0 2px 20px #0a58ca;
+}
+
+.center-header{
+    text-align: center;
+    margin: 2rem 0rem;
+    color: darkcyan;
+}
+.main-content .features .card{
+    border: 1px solid black;
+    width: 24%;
+    visibility:hidden;
+    /* opacity: 0; */
+    transform: translateY(77vh);
+    transition: all 1s ease-in-out 0s;
+    /* height: 326px; */
+    
+}
+.main-content .ph-gallery .card{
+    width: 24%;
+}
+
+
+.main-content .features .card:not(.card:last-child), .main-content .ph-gallery .card:not(.card:last-child),.main-content .our-team .card:not(.card:last-child){
+    margin-right: 1%;
+    /* border: 4px solid black; */
+}
+.main-content .features .card img{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 7px 0px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.main-content .ph-gallery .card img{
+    width: 100%;
+    height: 180px;
+    margin: 7px 0px;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.main-content .features .card .card-body{
+    border-top: 1px solid grey;
+    
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    padding-top: 1.5rem;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+
+}
+.main-content .features .trigger-element{
+    display: flex;
+    justify-content: center;
+}
+.main-content .features .card button{
+    margin-top: 1.5rem;
+    padding: 4px 29px;
+
+}
+footer {
+    background-color: #282b2e;
+}
+.footer-form {
+
+    position: absolute;
+    top: 1%;
+    right: 3%;
+}
+.footer-form #footer-email-input{
+    width: 300px;
+    height: 46px;
+    padding: 5px 10px;
+}
+.footer-form input[type="submit"]{
+     background-color: darkcyan;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+}
+
+footer .footer-logo {
+    border-radius: 50%;
+    width: 81%;
+    margin-right: 13px;
+}
+footer .g20-logo {
+    
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
+footer .footer-icon {
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+
+footer .row {
+    justify-content: space-around;
+}
+
+/* registration.html */
+.register{
+    width: 60%;
+    margin: 0px 2rem;
+    padding-top: 1rem;
+}
+.register form{
+    padding: 0.5rem;
+}
+
+/* events.html */
+.main-content .table{
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.main-content .table .col1-width{
+    width: 6%;
+}
+.main-content .table .col2-width{
+    width: 60%;
+}
+
+/* our-team.html */
+.main-content .our-team .card i{
+    font-size: 1rem;
+    color: black;
+    margin-right: 5px;
+    margin-top: 5px;
+    transition: font-size 0.2s ease-in-out;
+}
+.main-content .our-team .card i:hover{
+    font-size: 1.5rem;
+}
+.main-content .our-team .card{
+    width: 24%;
+}
+.main-content .our-team .card img{
+    width: 80%;
+    height: 180px;
+    margin: 2px 0px;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+/* contact-us.html */
+.main-content .contact-content ul{
+    list-style: none;
+    margin: 2rem;
+    padding-left: 5%;
+}
+.main-content .contact-content i{
+    color: black;
+    margin-right: 1.3%;
+}
+.main-content .contact-content .social-icons{
+    padding-left: 7%;
+    margin-top: 2rem;
+}
+.main-content .contact-content .social-icons i{
+    font-size: 1.5rem;
+}
+
+/* about.html */
+
+.main-content .navbar-about{
+    padding: 1rem 3rem 0rem 3rem;
+    text-align: justify;
+}
+
+.main-content .navbar-about .card{
+  height: fit-content;
+}
+.main-content .navbar-about .card:hover{
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.3s linear;
+  }
+.main-content .navbar-about .card:not(.card:last-child){
+    margin-right: 10px;
+}
+
+.main-content .navbar-about .card img{
+    width: 77px;
+}
+.main-content .navbar-about .card img:hover {
+  width: 87px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* aims & objective .html */
+.main-content .navbar-aim .card img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-left: 10px;
+}
+.main-content .navbar-aim .card{
+   border: 2px solid grey;
+   border-radius: 10px;
+}
+.main-content .navbar-aim .card:hover{
+    border: none;
+    box-shadow: 0px 0px 8px darkcyan;
+}
+
+
+/* membership.html */
+.main-content .membership-content{
+    padding-left: 3rem;
+}
+.main-content .membership-content .card{
+    width: 33%;
+    margin-right: 1%;
+
+}
+.main-content .membership-content .card:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.main-content .membership-content .card .card-body ul li{
+    margin-bottom: 0.5rem;
+}
+.main-content .membership-content table {
+    border-collapse: collapse;
+    /* width: 100%; */
+  }
+
+.main-content .membership-content table th, td {
+    /* border: 1px solid #000; */
+    padding: 8px;
+    /* text-align: center; */
+  }
+
+  .main-content .membership-content .qr-section img{
+    width: 100%;
+  }
+
+  /* members.html */
+  .main-content .members-content table  td {
+    text-align: left;
+}
+.main-content .members-content .fa-print {
+      font-size: 1rem;
+   
+  }
+  .main-content .members-content .fa-print:hover{
+    color: red;
+    font-size: 1.1rem;
+    transition: all 0.2s linear;
+  }

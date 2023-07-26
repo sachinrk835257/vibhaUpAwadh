@@ -2,38 +2,36 @@
 <html>
 
 <head>
-    <title>Tilt Left Border</title>
+    <title>Hover Effect - CSS</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        .tilted-border {
-            width: 200px;
-            height: 100px;
-            border-left: 3px solid #000;
-            background-color: #f0f0f0;
-            position: relative;
-            /* Required for positioning the ::before pseudo-element */
+        /* Your styles for both elements */
+        .hover-element {
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid #ccc;
+            display: inline-block;
+            cursor: pointer;
         }
 
-        .tilted-border::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -5px;
-            /* Adjust this value to control the tilt amount */
-            width: 5px;
-            /* Adjust this value to control the width of the tilted border */
-            height: 100%;
-            background-color: #000;
-            transform: skewY(-30deg);
-            transform-origin: 0% 0;
-            /* Set the pivot point to the top-left corner */
+        .target-element {
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Apply CSS to .target-element when .hover-element is hovered */
+        .hover-element:hover+.target-element {
+            background-color: pink;
         }
     </style>
 </head>
 
 <body>
-    <div class="tilted-border">
-        This is a div with a tilted left border.
-    </div>
+    <div class="hover-element">Hover me!</div>
+    <div class="target-element">I change when you hover over the other element.</div>
 </body>
 
 </html>

@@ -1,0 +1,161 @@
+/* For screens smaller than 768px (typical smartphones) */
+@media (max-width: 767px) {
+  body {
+    background-color: rgb(236, 132, 132);
+  }
+
+  .jumbotron .jumbo-mail {
+    display: none;
+  }
+
+  .outer-container footer .main-content-header {
+    width: 100%;
+
+  }
+
+  .jumbotron .container {
+    display: block;
+  }
+
+  .jumbotron {
+    padding: 0;
+  }
+
+  .login-area a {
+    font-size: 1rem;
+  }
+
+  .supportive-box {
+    display: none;
+  }
+
+  .main-content-header {
+    width: 100%;
+    font-size: 1.2rem;
+
+  }
+
+  .main-content .content {
+    margin: 19px 0px 12px 0px;
+  }
+
+  .main-content button {
+    padding: 6px 18px;
+  }
+
+  .main-content .aim ul{
+    margin-top: 1rem;
+    text-align: justify;
+    padding: 0px 0px 0px 8px;
+    width: 100%;
+  }
+
+  .features .content-header{
+    font-size: 1.6rem;
+  }
+  .features .trigger-element{
+    display: block!important;
+  }
+  .features .trigger-element .card{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+
+  .outer-container footer .supportive-box {
+    display: none;
+  }
+
+  .footer-form {
+    left: 0%;
+    top: 7%;
+  }
+
+  .footer-form #footer-email-input {
+    width: 47%;
+    height: 41px;
+
+  }
+
+  .footer-form input[type="submit"] {
+
+    padding: 8px 15px;
+
+  }
+
+
+  .outer-container footer .mb-md-0 {
+    /* width: 80%; */
+    padding-top: 1rem;
+  }
+
+  footer .g20-logo {
+    width: 92%;
+
+  }
+
+  footer .footer-logo {
+    border-radius: 50%;
+  }
+
+  footer .footer-icon {
+    font-weight: 400;
+
+  }
+}
+
+/* For screens between 768px and 991px (small tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  body {
+    background-color: rgb(153, 217, 224);
+  }
+
+  .login-area {
+    padding: 10px 20px 10px 78px;
+  }
+
+
+
+  .supportive-box {
+    left: 30%;
+    width: 101px;
+    height: 62.5px;
+  }
+
+  .main-content-header {
+    width: 36%;
+    font-size: 1.4rem;
+
+  }
+
+  .social-area .social-accounts .card:not(.card:last-child) {
+    margin-right: 3px;
+
+  }
+
+  .footer-form #footer-email-input {
+    width: 195px;
+    height: 35px;
+  }
+
+  .outer-container footer .footer-top {
+    padding-top: 1rem;
+  }
+
+  .outer-container footer .main-content-header {
+    width: 35%;
+    font-size: 1.2rem;
+  }
+
+  .outer-container footer .supportive-box {
+    left: 29%;
+    width: 140px;
+    height: 58.5px;
+  }
+
+  .outer-container footer .mb-md-0 {
+    width: 30%;
+  }
+
+}
