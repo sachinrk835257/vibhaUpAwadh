@@ -149,7 +149,7 @@ window.onload = function (e) {
 
             <ul>
               <li class="mb-2 text-left">
-                <a href="#!" class="text-white">Vigayn Bharati MP
+                <a href="index.html" class="text-white">Home
                 </a>
               </li>
               <li class="mb-2 text-left">
