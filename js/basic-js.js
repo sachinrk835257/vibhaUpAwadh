@@ -4,7 +4,7 @@ window.onload = function (e) {
       <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <p class="ml-2 mb-0 jumbo-mail" style="font-size: 14px;padding-left: 14px;">Contact Email <a
-            href="mailto:vibhabharatiupawadh@gmail.com">vibhabharatiupawadh@gmail.com</a>
+            href="mailto:vibhaawadh@gmail.com">vibhaawadh@gmail.com</a>
         </p>
         <div class="login-area">
           <a href="registration.html"><i class="fa-solid fa-user"></i> New Registration</a>
@@ -180,13 +180,17 @@ window.onload = function (e) {
 
             <ul class="list-unstyled">
               <li>
-                <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>F3, Prema Apartment, behind hanuman setu, Lucknow, UP, India</p>
               </li>
               <li>
-                <p><i class="fas fa-phone pe-2"></i>tel:91-99810 88775</p>
+                <p><i class="fas fa-phone pe-2"></i>tel:91-94156 13968 (Shri Manish ji)</p>
               </li>
               <li>
-                <p><i class="fas fa-envelope pe-2 mb-0"></i>vigyanbharatimalwa@gmail.com</p>
+                <p><i class="fas fa-phone pe-2"></i>tel:91-9793825005 (Dr Neeraj Kumar Tiwari)</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i><a
+            href="mailto:vibhaawadh@gmail.com">vibhaawadh@gmail.com</a></p>
               </li>
             </ul>
           </div>
@@ -199,7 +203,7 @@ window.onload = function (e) {
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: darkcyan;">
         © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">vibhaUP.org</a>
+        <a class="text-white" href="https://mdbootstrap.com/">vibha-awadh.org</a>
       </div>
       <!-- Copyright -->
     </div>
