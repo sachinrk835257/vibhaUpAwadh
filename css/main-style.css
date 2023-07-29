@@ -142,6 +142,11 @@ body {
 }
 
 /* carousal css */
+.carousel-inner .cr-img {
+    width: 100%;
+    height: 40vw;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     top: 50%;
