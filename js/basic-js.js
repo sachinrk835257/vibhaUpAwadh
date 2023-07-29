@@ -1,4 +1,3 @@
-console.log("runnig")
 window.onload = function (e) {
   $(document).ready(function () {
     $('.outer-container header').append(`
@@ -34,8 +33,8 @@ window.onload = function (e) {
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="about.html"> About Us</a></li>
                 <li><a class="dropdown-item" href="aims.html"> Aims And Objectives </a></li>
-                <li><a class="dropdown-item" href="#"> Our National Team </a></li>
-                <li><a class="dropdown-item" href="our-team.html"> Our UP(AWADH) Team </a></li>
+                <li><a class="dropdown-item" href="#"> National Team </a></li>
+                <li><a class="dropdown-item" href="our-team.html"> UP (AWADH) Team </a></li>
               </ul>
             </li>
             <li class="nav-item position-relative"><a class="nav-link" href="our-team.html"> Our Team </a></li>
@@ -48,7 +47,6 @@ window.onload = function (e) {
 
               </ul>
             </li>
-            <li class="nav-item position-relative"><a class="nav-link" href="#"> Conference </a></li>
             <li class="nav-item position-relative"><a class="nav-link" href="photo-gallery.html"> Photo Gallery </a></li>
             <li class="nav-item position-relative"><a class="nav-link" href="contact-us.html"> Contact Us </a></li>
 
@@ -225,7 +223,7 @@ $('.outer-container .main-content .features').append(`
                 href="https://vijnanabharati.org/Shakti.html" target="_blank"><button> CLICK</button></a>
         </div>
         </div>
-    <div class="card align-items-center"> <img src="images/mandala-entity.png" class="" alt="...">
+    <div class="card align-items-center"> <img src="images/SHIKSHASHILPI.png" class="" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">Shikshashilpi</h5> <a
                 href="https://vijnanabharati.org/shikshashilpi.html" target="_blank"><button> CLICK</button></a>
@@ -251,7 +249,7 @@ $('.outer-container .main-content .features').append(`
                 href="https://vijnanabharati.org/VVVS.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
-    <div class="card align-items-center"> <img src="images/features-im7.png" class="" alt="...">
+    <div class="card align-items-center"> <img src="images/vibha_vani.Jpg" class="" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">Vibha Vani</h5> <a
                 href="https://vijnanabharati.org/vibha_vani.html" target="_blank"><button> CLICK</button></a>
@@ -260,5 +258,3 @@ $('.outer-container .main-content .features').append(`
 </div>
         `);
 
-console.log("in basic")
-console.log(document.querySelectorAll(".trigger-element"))
