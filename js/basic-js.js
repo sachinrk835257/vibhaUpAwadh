@@ -253,7 +253,7 @@ $('.outer-container .main-content .features').append(`
                 href="https://vijnanabharati.org/VVVS.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
-    <div class="card align-items-center"> <img src="images/vibha_vani.Jpg" class="" alt="...">
+    <div class="card align-items-center"> <img src="images/vibha_vani.jpg" class="" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">Vibha Vani</h5> <a
                 href="https://vijnanabharati.org/vibha_vani.html" target="_blank"><button> CLICK</button></a>
