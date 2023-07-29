@@ -1,5 +1,3 @@
-console.log("main-js running")
-
 document.addEventListener("DOMContentLoaded", function () {
     // make it as accordion for smaller screens
     if (window.innerWidth > 992) {
@@ -78,16 +76,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", handleAnimation);
     // Event listener for scroll
 });
-
-
-// let find = document.querySelector('.main-content .features');
-// find.innerHTML='<h2>Entities & Initiatives</h2><div class="mb-3 d-flex justify-content-center trigger-element"><div class="card align-items-center"><img src="images/membership-img.jpg" class="" alt="..."><div class="card-body"><h5 class="card-title text-center">Online Membership</h5><button> CLICK </button></div></div> <div class="card align-items-center">    <img src="images/SHAKTI.png" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">Shakti - A national Movement for Women</h5>      <a href="https://vijnanabharati.org/Shakti.html" target="_blank"><button> CLICK</button></a></div></div>  <div class="card align-items-center">    <img src="images/mandala-entity.png" class="" alt="...">   <div class="card-body">      <h5 class="card-title text-center">Mandala</h5>      <button> CLICK </button>    </div>  </div>  <div class="card align-items-center">    <img src="images/TECH4SEVA.png" alt="...">    <div class="card-body">   <h5 class="card-title ext-center">TECH4SEVA</h5>      <button> CLICK</button>    </div> </div></div><div class="mb-2 d-flex justify-content-center trigger-element">  <div class="card align-items-center">    <img src="images/features-im6.png" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">IISF</h5>      <button> CLICK </button>    </div>  </div>  <div class="card align-items-center">    <img src="images/features-img5.jpg" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">Vishwa Ved Vigyan</h5>      <button> CLICK </button>    </div>  </div>  <div class="card align-items-center">    <img src="images/features-im7.png" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">NASYA</h5>      <button> CLICK </button>    </div>  </div></div>'
-
-// $(".outer-container .main-content .features").append('<h2>Entities & Initiatives</h2><div class="mb-3 d-flex justify-content-center trigger-element"><div class="card align-items-center"><img src="images/membership-img.jpg" class="" alt="..."><div class="card-body"><h5 class="card-title text-center">Online Membership</h5><button> CLICK </button></div></div> <div class="card align-items-center">    <img src="images/SHAKTI.png" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">Shakti - A national Movement for Women</h5>      <a href="https://vijnanabharati.org/Shakti.html" target="_blank"><button> CLICK</button></a></div></div>  <div class="card align-items-center">    <img src="images/mandala-entity.png" class="" alt="...">   <div class="card-body">      <h5 class="card-title text-center">Mandala</h5>      <button> CLICK </button>    </div>  </div>  <div class="card align-items-center">    <img src="images/TECH4SEVA.png" alt="...">    <div class="card-body">   <h5 class="card-title ext-center">TECH4SEVA</h5>      <button> CLICK</button>    </div> </div></div><div class="mb-2 d-flex justify-content-center trigger-element">  <div class="card align-items-center">    <img src="images/features-im6.png" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">IISF</h5>      <button> CLICK </button>    </div>  </div>  <div class="card align-items-center">    <img src="images/features-img5.jpg" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">Vishwa Ved Vigyan</h5>      <button> CLICK </button>    </div>  </div>  <div class="card align-items-center">    <img src="images/features-im7.png" class="" alt="...">    <div class="card-body">      <h5 class="card-title text-center">NASYA</h5>      <button> CLICK </button>    </div>  </div></div>')
-
-
-
-
-
-console.log("in main")
-console.log(document.querySelectorAll(".trigger-element"))
