@@ -227,29 +227,34 @@ $('.outer-container .main-content .features').append(`
         </div>
     <div class="card align-items-center"> <img src="images/mandala-entity.png" class="" alt="...">
         <div class="card-body">
-            <h5 class="card-title text-center">Mandala</h5> <button> CLICK </button>
+            <h5 class="card-title text-center">Shikshashilpi</h5> <a
+                href="https://vijnanabharati.org/shikshashilpi.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
     <div class="card align-items-center"> <img src="images/TECH4SEVA.png" alt="...">
         <div class="card-body">
-            <h5 class="card-title ext-center">TECH4SEVA</h5> <button> CLICK</button>
+            <h5 class="card-title text-center">TECH4SEVA</h5> <a
+                href="https://vijnanabharati.org/Tech4Seva.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
 </div>
 <div class="mb-2 d-flex justify-content-center trigger-element">
     <div class="card align-items-center"> <img src="images/features-im6.png" class="" alt="...">
         <div class="card-body">
-            <h5 class="card-title text-center">IISF</h5> <button> CLICK </button>
+            <h5 class="card-title text-center">IISF</h5> <a
+                href="https://vijnanabharati.org/IISF.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
     <div class="card align-items-center"> <img src="images/features-img5.jpg" class="" alt="...">
     <div class="card-body">
-            <h5 class="card-title text-center">Vishwa Ved Vigyan</h5> <button> CLICK </button>
+            <h5 class="card-title text-center">Vishwa Ved Vigyan</h5> <a
+                href="https://vijnanabharati.org/VVVS.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
     <div class="card align-items-center"> <img src="images/features-im7.png" class="" alt="...">
         <div class="card-body">
-            <h5 class="card-title text-center">NASYA</h5> <button> CLICK </button>
+            <h5 class="card-title text-center">Vibha Vani</h5> <a
+                href="https://vijnanabharati.org/vibha_vani.html" target="_blank"><button> CLICK</button></a>
         </div>
     </div>
 </div>
