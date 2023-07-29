@@ -19,7 +19,7 @@ window.onload = function (e) {
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
           <div><img class="logo" src="images/vibha bharati logo2.jpg" alt="error"></div>
-          <div><span>VIBHA UP(AWADH)</span></div>
+          <div><span>VIBHA UP (AWADH)</span></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
           aria-expanded="false" aria-label="Toggle navigation">
