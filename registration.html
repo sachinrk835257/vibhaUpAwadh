@@ -22,66 +22,204 @@
 
 <body>
   <div class="outer-container container">
-    <header>    </header>
+    <header> </header>
 
     <main class="main-content">
-        <h2 class="header">Registration</h2>
-        <div class=" container register">
-        <form action="" class="row g-3" method="post">
-            <div class="col-12">
-                <label for="name" class="form-label">Enter Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="inputEmail">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" name="phone" id="phon" required>
-            </div>
-            <!-- <div class="col-12">
-                <label for="inputAddress" class="form-label">Address lane1</label>
-                <input type="text" class="form-control" id="inputAddress" name="adr1" placeholder="1234 Main St"
-                    required>
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address lane2</label>
-                <input type="text" class="form-control" id="inputAddress2" name="adr2"
-                    placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" name="city" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" name="selectState" class="form-select">
-                    <option value="up" selected>Choose...</option>
-                    <option value="up">up</option>
-                    <option value="haryana">haryana</option>
-                    <option value="rajasthan">rajasthan</option>
-                    <option value="delhi">delhi</option>
+      <h2 class="header">Registration</h2>
+      <div class=" container register">
+        <div id="registrationForm">
+          <!-- Section 1 -->
+          <div class="page section1">
+            <h3>Step 1: Select Membership Category</h3>
+            <form>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Individual (INDIA) - ₹1,000.00*
+              </label>
+              <div class="mt-3">
+                <button type="submit" class="btn btn-success nextBtn">Next</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="page section2">
+            <h3>Step 2: Personal Details </h3>
+            <form>
+              <!-- Add your contact information fields here -->
+              <div class="form-group mt-3">
+                <label for="name">Enter Your Full Name</label><br>
+                <span class="d-flex mt-2" style="column-gap: 10px;">
+                  <select name="" id="">
+                    <option value="" disabled selected>Select -</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mr.">Prof.</option>
+                  </select>
+                  <input type="text" id="name" class="form-control" required placeholder="Enter Name Here">
+                </span>
+              </div>
+              <div class="form-grou mt-3">
+                <label for="gender" class="mb-2">Select Your Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
                 </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip" name="zip" required>
-            </div> -->
+              </div>
 
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Register</button>
-            </div>
-        </form>
-      </div>
-        <div class="features">
+              <div class="form-group mt-3">
+                <label for="dob" class="mb-2">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" name="dob" required>
+              </div>
 
+              <div class="form-group mt-3">
+                <label for="areaOfInterest" class="mb-2">Select Area of Interest</label>
+                <select id="areaOfInterest" class="form-control" name="areaOfInterest" required>
+                  <option value="" disabled selected>Nothing Selected</option>
+                  <option value="Traditional Knowledge and Applications">Traditional Knowledge and Applications>
+                  </option>
+                  <option value="Environment">Environment></option>
+                  <option value="Energy">Energy></option>
+                  <option value="Health Sciences">Health Sciences></option>
+                  <option value="Engineering Sciences">Engineering Sciences></option>
+                  <option value="Literature">Literature></option>
+                  <option value="Infrastructure, Technology and Communications">Infrastructure, Technology and
+                    Communications></option>
+                  <option value="Waste Management">Waste Management></option>
+                  <option value="Woman Empowerment">Woman Empowerment></option>
+                  <option value="School Student Activities">School Student Activities></option>
+                  <option value="Agriculture and Veterinary Science">Agriculture and Veterinary Science></option>
+                  <option value="Indic Science">Indic Science></option>
+                  <option value="Others">Others></option>
+
+                </select>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="otherInterest mb-2">Enter Your Designation</label>
+                <input type="text" id="otherInterest" class="form-control" placeholder="Example, Arts and Crafts"
+                  required>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="instituteName mb-2">Enter Name of Affiliated Institute</label>
+                <input type="text" id="instituteName" class="form-control" placeholder="Example, BBAU UNIVERSITY"
+                  required>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="designation mb-2">Enter Your Designation</label>
+                <input type="text" id="designation" class="form-control" placeholder="Enter Designation" required>
+              </div>
+
+              <div class="form-buttons mt-3">
+                <button type="button" class="btn btn-primary prevBtn">Previous</button>
+                <button type="button" class="btn btn-primary nextBtn">Next</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="page section3">
+            <h3>Step 3: Contact Details</h3>
+            <form>
+              <div class="form-group mt-3">
+                <label for="pri-email mb-2">Enter Your Primary Email Address</label>
+                <input type="text" id="pri-email" class="form-control" placeholder="Enter Primary Email" required>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="pri-mobile mb-2">Enter Your Primary Mobile Number</label>
+                <input type="text" id="pri-mobile" class="form-control" placeholder="Enter Primary Mobile NUmber"
+                  required>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="pri-whatsapp mb-2">Enter Your Primary Whatsapp Number</label>
+                <input type="text" id="pri-whatsapp" class="form-control" placeholder="Enter Primary Whatsapp NUmber"
+                  required>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="password mb-2">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="enter Password"
+                  required>
+              </div>
+
+              <div class="pswrd-rles">
+                <h5>Password Rules</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas!</p>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="cfrm-password mb-2">Confirm Password:</label>
+                <input type="cfrm-password" class="form-control" id="password" name="password"
+                  placeholder="enter Password again" required>
+              </div>
+
+              <div class="form-buttons mt-3">
+                <button type="button" class="btn btn-primary prevBtn">Previous</button>
+                <button type="button" class="btn btn-primary nextBtn">Next</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="page section4">
+            <h3>Step 4: Enter Your Regional Details</h3>
+            <form>
+              <div class="form-group mt-3">
+
+                <label for="countrySelect" class="mb-2">Select Country:</label>
+                <select id="countrySelect" name="countrySelect" required>
+                  <option value="" disabled selected>-- Select Country --</option>
+                  <option value="India">India</option>
+
+                </select>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="stateSelect" class="mb-2">Select State:</label>
+                <select id="stateSelect" onchange="populateCities()">
+                  <option value="">-- Select State --</option>
+                  <option value="andhra_pradesh">Andhra Pradesh</option>
+                  <option value="maharashtra">Maharashtra</option>
+                  <option value="tamil_nadu">Tamil Nadu</option>
+                  <!-- Add more states here -->
+                </select>
+
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="citySelect">Select City:</label>
+                <select id="citySelect">
+                  <option value="">-- Select City --</option>
+                </select>
+              </div>
+
+
+            </form>
+          </div>
         </div>
+      </div>
+      <div class="features">
 
-      
+      </div>
+
+
     </main>
 
-    <footer class="text-left text-lg-start text-white">    </footer>
+    <footer class="text-left text-lg-start text-white"> </footer>
 
   </div>
 
@@ -93,8 +231,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
- 
-    <script src="js/basic-js.js" defer></script>
+
+  <script src="js/basic-js.js" defer></script>
   <script src="js/main-js.js" defer></script>
 </body>
 

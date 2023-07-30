@@ -76,3 +76,33 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", handleAnimation);
     // Event listener for scroll
 });
+
+
+const citiesByState = {
+    andhra_pradesh: ["Hyderabad", "Visakhapatnam", "Vijayawada", "Guntur"],
+    maharashtra: ["Mumbai", "Pune", "Nagpur", "Nashik"],
+    tamil_nadu: ["Chennai", "Coimbatore", "Madurai", "Salem"],
+    // Add more states and their cities here
+  };
+  
+  function populateCities() {
+    const stateSelect = document.getElementById("stateSelect");
+    const citySelect = document.getElementById("citySelect");
+    const selectedState = stateSelect.value;
+    const cities = citiesByState[selectedState] || [];
+  
+    // Clear existing city options
+    citySelect.innerHTML = '<option value="">-- Select City --</option>';
+  
+    // Add city options for the selected state
+    cities.forEach((city) => {
+      const option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      citySelect.appendChild(option);
+    });
+  }
+  
+  // Trigger initial population of cities when the page loads
+  populateCities();
+  
