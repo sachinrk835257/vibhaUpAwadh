@@ -109,7 +109,7 @@ window.onload = function (e) {
       <form action="">
         <div class="footer-form">
           <input type="email" placeholder="enter your emailaddress....." name="email" id="footer-email-input">
-          <input type="submit" value="Join Us">
+          <button type="submit" class="btn btn-primary">Join Us</button>
         </div>
       </form>
       <!-- Grid container -->

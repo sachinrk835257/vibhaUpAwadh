@@ -466,9 +466,11 @@ footer .row {
 /* membership.html */
 .main-content .membership-content{
     padding-left: 3rem;
+    padding-right: 1rem;
+    font-size: 1.1rem;
 }
 .main-content .membership-content .card{
-    width: 33%;
+    width: 45%;
     margin-right: 1%;
 
 }
@@ -490,7 +492,7 @@ footer .row {
   }
 
   .main-content .membership-content .qr-section img{
-    width: 100%;
+    width: 80%;
   }
 
   /* members.html */
