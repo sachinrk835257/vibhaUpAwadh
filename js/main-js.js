@@ -75,6 +75,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     window.addEventListener("scroll", handleAnimation);
     // Event listener for scroll
+
+
+    var area = document.querySelector('.register');
+    var numbering = document.querySelector('.progress .numbering');
+    var progressBar = document.querySelector('.progress .progress-bar');
+
+    area.addEventListener('click',function (e){
+        if (e.target.classList.contains('nextBtn')) {
+            numbering.classList.add('next-numbering');
+            progressBar.classList.add('next-progress-bar')
+            
+        } if (e.target.classList.contains('prevBtn')) {
+            
+        }
+    })
 });
 
 
