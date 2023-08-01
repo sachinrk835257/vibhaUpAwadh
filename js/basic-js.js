@@ -226,7 +226,7 @@ $('.outer-container .main-content .features').append(`
         <h5 class="card-title text-center">Shakti - A national Movement for Women</h5> <a
                 href="https://vijnanabharati.org/Shakti.html" target="_blank"><button> CLICK</button></a>
         </div>
-        </div>
+      </div>
     <div class="card align-items-center"> <img src="images/SHIKSHASHILPI.png" class="" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">Shikshashilpi</h5> <a
